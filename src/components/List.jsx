@@ -7,9 +7,12 @@ function List() {
     <main>
       <h2>Min lista</h2>
 
-      <button onClick={() => setShowList(!showList)}>
-        {showList ? "Dölj lista" : "Visa lista"}
-      </button>
+      <div
+        className={showList ? "toggle on" : "toggle"}
+        onClick={() => setShowList(!showList)}
+      >
+        <div className="toggle-circle"></div>
+      </div>
 
       {showList && (
         <ul>

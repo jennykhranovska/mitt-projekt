@@ -5,7 +5,10 @@ function ClickButton() {
 
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>
+      <button
+        className="click-button"
+        onClick={() => setCount(count + 1)}
+      >
         Klicka mig
       </button>
 
