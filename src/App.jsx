@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import List from "./components/List";
 import Footer from "./components/Footer";
 import ClickButton from "./components/ClickButton";
+import ToggleSwitch from "./components/ToggleSwitch";
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       <Header />
       <List />
       <ClickButton />
+      <ToggleSwitch />
       <Footer />
-
     </>
   );
 }

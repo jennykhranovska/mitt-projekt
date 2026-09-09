@@ -28,6 +28,33 @@ button+p {
   margin-top: 15px;
 }
 
+.toggle {
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ccc;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.toggle.on {
+  background-color: #02c39a;
+}
+
+.toggle-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 2px;
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+
+.toggle.on .toggle-circle {
+  transform: translateX(30px);
+}
+
 @media (max-width: 600px) {
   #root {
     padding: 1rem;
